@@ -14,6 +14,40 @@ This repository demonstrates how to send a WhatsApp message using C# and the May
 - Newtonsoft.Json NuGet package
 - Maytapi account and API credentials
 
+
+## Installation
+1. Clone this repository
+```bash
+https://github.com/maytapi-com/send-a-message-with-csharp-using-whatsapp-api.git
+cd projecgt-folder
+```
+2. Configure your Maytapi credentials in appsettings.json:
+```json
+{
+  "MaytapiSettings": {
+  "ProductId": "your_product_id",
+  "PhoneId": "your_phone_id",
+  "ApiKey": "your_api_key"
+  }
+}
+```
+3. Install required NuGet packages
+```powershell
+dotnet add package Newtonsoft.Json
+dotnet add package Microsoft.Extensions.Configuration.Json
+```
+
+## Usage
+To send a test message, run:
+```csharp
+dotnet run
+```
+This will execute the Program.cs file, which contains the main logic for sending a WhatsApp message using the Maytapi API. The program reads configuration from appsettings.json, constructs the API request, and sends the message.
+
+> [!NOTE]
+> **To perform all these operations correctly, you need to register with maytapi.com, get the credentials, and place them in the config file.**
+
+
 ## Quick Start
 
 1. Clone this repository
